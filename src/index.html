@@ -1,85 +1,118 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/styles.css" type="text/css">
-    <title>Kayl Eubanks</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div>
-        <h1>Kayl Eubanks</h1>
-        <h2>full time developer, part time superfood</h2>
-      </div>
-      <div>
-        <h1>Projects</h1>
-        <div class="projectContainer">
-          <div class="project">
-            <img src="./assets/sample.jpg" alt="Placeholder alt text">
-            <h3>On-The-Spotify</h3>
-          </div>
-          <div class="project">
-            <img src="./assets/sample.jpg" alt="Placeholder alt text">
-            <h3>DnD Spell API</h3>
-          </div>
-          <div class="project">
-            <img src="./assets/sample.jpg" alt="Placeholder alt text">
-            <h3>Portfolio Site</h3>
-          </div>
-          <div class="project">
-            <img src="./assets/sample.jpg" alt="Placeholder alt text">
-            <h3>To Be Determined</h3>
-          </div>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/styles.css" type="text/css">
+  <title>Kayl Eubanks</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div>
+      <h1>Kayl Eubanks</h1>
+      <h2>full time developer, part time superfood</h2>
+    </div>
+    <div class="projectContainer">
+      <h1>Projects</h1>
+      <div class="row">
+        <div class="project col-md-3">
+          <img src="./assets/sample.jpg" alt="Placeholder alt text">
+          <h3>On-The-Spotify</h3>
         </div>
-      </div>
-      <div>
-        <h1>Skills</h1>
-        <ul>Web Development
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Angular</li>
-          <li>CSS</li>
-          <li>HTML</li>
-          <li>Redux</li>
-          <li>Node.js</li>
-          <li>ES6</li>
-          <li>TypeScript</li>
-          <li>JSX</li>
-          <li>Jest</li>
-          <li>Babel</li>
-          <li>Jasmine</li>
-          <li>Karma</li>
-          <li>Webpack</li>
-          <li>Spark</li>
-          <li>Handlebars/Mustache</li>
-        </ul>
-        <ul>Backend Development
-          <li>Java</li>
-          <li>SQL</li>
-          <li>NoSQL</li>
-          <li>IntelliJ IDEA</li>
-          <li>Gradle</li>
-          <li>Maven</li>
-          <li>PostgreSQL</li>
-        </ul>
-      </div>
-      <div>
-        <h1>About</h1>
-      </div>
-      <div>
-        <div class="contact">
-          <h1>Reach out</h1>
-          <p>kayleubanks@gmail.com</p>
-          <p>(949)-683-6251</p>
+        <div class="project col-md-3">
+          <img src="./assets/sample.jpg" alt="Placeholder alt text">
+          <h3>DnD Spell API</h3>
         </div>
-        <div class="social">
-          <h1>Follow me</h1>
-          <p><a href="https://twitter.com/TimeToKayl">@TimeToKayl</a></p>
-          <p><a href="https://github.com/K-Banks">Github.com/K-Banks</a></p>
-          <p><a href="https://www.linkedin.com/in/kayleubanks/">LinkedIn.com/kayleubanks</a></p>
+        <div class="project col-md-3">
+          <img src="./assets/sample.jpg" alt="Placeholder alt text">
+          <h3>Portfolio Site</h3>
+        </div>
+        <div class="project col-md-3">
+          <img src="./assets/sample.jpg" alt="Placeholder alt text">
+          <h3>To Be Determined</h3>
         </div>
       </div>
     </div>
-  </body>
+    <div class="skills">
+      <h1>Skills</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Web Development</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <ul>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Angular</li>
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>Redux</li>
+                <li>Node.js</li>
+                <li>ES6</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul>
+                <li>TypeScript</li>
+                <li>JSX</li>
+                <li>Jest</li>
+                <li>Babel</li>
+                <li>Jasmine</li>
+                <li>Karma</li>
+                <li>Webpack</li>
+                <li>Spark</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h3>Backend Development</h3>
+          <ul>
+            <li>Java</li>
+            <li>SQL</li>
+            <li>NoSQL</li>
+            <li>IntelliJ IDEA</li>
+            <li>Gradle</li>
+            <li>Maven</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h1>About</h1>
+      <p>This is a short blurb about me. I will mention some of my background and how I got started in development as well as some hobbies of mine.</p>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="./assets/sample.jpg" alt="placeholder">
+          <p>Caption for image 1</p>
+        </div>
+        <div class="col-md-4">
+          <img src="./assets/sample.jpg" alt="placeholder">
+          <p>Caption for image 1</p>
+        </div>
+        <div class="col-md-4">
+          <img src="./assets/sample.jpg" alt="placeholder">
+          <p>Caption for image 1</p>
+        </div>
+        <div id="box">
+          <h4>More...</h4>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="contact">
+        <h1>Reach out</h1>
+        <p>kayleubanks@gmail.com</p>
+        <p>(949)-683-6251</p>
+      </div>
+      <div class="social">
+        <h1>Follow me</h1>
+        <p><a href="https://twitter.com/TimeToKayl">@TimeToKayl</a></p>
+        <p><a href="https://github.com/K-Banks">Github.com/K-Banks</a></p>
+        <p><a href="https://www.linkedin.com/in/kayleubanks/">LinkedIn.com/kayleubanks</a></p>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
