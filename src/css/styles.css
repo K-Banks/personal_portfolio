@@ -3,10 +3,6 @@ body {
   font-family: sans-serif;
 }
 
-.col-md-6 {
-  height: auto;
-}
-
 div {
   text-align: center;
 }
@@ -16,18 +12,8 @@ div {
   color: #0a0a0a;
 }
 
-.contact {
-  width: 50%;
-  float: left;
-}
-
-.social {
-  width: 50%;
-  float: right;
-}
-
 .projectContainer {
-  height: auto;
+  height: 300px;
   margin-bottom: 50px;
 }
 
@@ -43,6 +29,5 @@ li {
 
 #box {
   margin: 5% 50% 5% 50%;
-  width: 30%;
   border: 5px solid black;
 }
