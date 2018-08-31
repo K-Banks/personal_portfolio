@@ -1,0 +1,26 @@
+body {
+  background-color: #fff;
+}
+
+.wrapper {
+  width: 80%;
+}
+
+div {
+  text-align: center;
+}
+
+.wrapper div {
+  background-color: #e5e5e5;
+  color: #0a0a0a;
+}
+
+.contact {
+  width: 50%;
+  float: left;
+}
+
+.social {
+  width: 50%;
+  float: right;
+}
