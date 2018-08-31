@@ -25,3 +25,14 @@ div {
   width: 50%;
   float: right;
 }
+
+.project {
+  width: 20%;
+  padding-left: 5%;
+}
+
+.project img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
