@@ -23,11 +23,45 @@ img {
   border-radius: 100%;
 }
 
+.hoverimg {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
 li {
   list-style: none;
 }
 
 #box {
-  margin: 5% 50% 5% 50%;
-  border: 5px solid black;
+  height: 100px;
+  margin: 10% 40% 5%;
+  border: solid #80b283;
+  border-radius: 50%;
+  padding: 30px 7px 7px;
 }
+
+#box:hover {
+  border: solid #a0a0a0;
+  background-color: #80b283;
+}
+
+a {
+  color: #000000;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #80b283;
+}
+
+.project:hover .hoverimg {
+  display: inline;
+}
+
+.card
