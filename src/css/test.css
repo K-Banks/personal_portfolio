@@ -3,6 +3,7 @@ div {
 }
 
 .wrapper {
+  border: 10px solid white;
   display: grid;
   grid-template: repeat(5, auto) / 1fr 1fr;
   grid-gap: 30px;
@@ -57,6 +58,7 @@ div {
 
 .about {
   background-image: url(./../assets/herobg.jpg);
+  background-position: right;
   grid-area: a;
   display: grid;
   grid-template-rows: repeat(4, auto);
@@ -91,16 +93,16 @@ li {
 }
 
 #box {
-  height: 100px;
+  height: 50px;
   margin: 10% 40% 5%;
-  border: solid #5E8260;
-  border-radius: 50%;
-  padding: 30px 7px 7px;
+  border: solid #9FC69F;
+  background-color: #9FC69F;
+  padding: 7px 7px;
 }
 
 #box:hover {
-  border: solid #a0a0a0;
-  background-color: #5E8260;
+  border: solid #5A7F5A;
+  background-color: #D2CBCC;
 }
 
 a {
@@ -110,5 +112,5 @@ a {
 a:hover {
   text-decoration: none;
   color: #4D463E;
-  text-shadow: 1px 2px 2px #A0958E;
+  text-shadow: 1px 2px 2px #5A7F5A;
 }
