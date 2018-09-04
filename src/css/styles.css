@@ -1,20 +1,13 @@
-body {
-  background-color: #fff;
-  font-family: sans-serif;
-}
-
 div {
   text-align: center;
 }
 
-.wrapper div {
-  background-color: #e5e5e5;
-  color: #0a0a0a;
-}
-
-.projectContainer {
-  height: 300px;
-  margin-bottom: 50px;
+.wrapper {
+  display: grid;
+  grid-template: repeat(5, 800px), repeat(4, 1fr);
+  grid-gap: 5px;
+  background-color: #D2CBCC;
+  color: #464039;
 }
 
 img {
@@ -41,14 +34,14 @@ li {
 #box {
   height: 100px;
   margin: 10% 40% 5%;
-  border: solid #80b283;
+  border: solid #5E8260;
   border-radius: 50%;
   padding: 30px 7px 7px;
 }
 
 #box:hover {
   border: solid #a0a0a0;
-  background-color: #80b283;
+  background-color: #5E8260;
 }
 
 a {
@@ -57,11 +50,10 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #80b283;
+  color: #4D463E;
+  text-shadow: 1px 2px 2px #A0958E;
 }
 
 .project:hover .hoverimg {
   display: inline;
 }
-
-.card
