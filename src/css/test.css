@@ -14,18 +14,27 @@ div {
     "p p"
     "s s"
     "a a"
-    "c m"
+    "c m";
 }
 
 .header {
+  display: grid;
   grid-area: h;
+  align-content: center;
 }
 
 .projectContainer {
   grid-area: p;
   display: grid;
-  grid-template: 60px 200px / repeat(4, 1fr);
-  grid-gap: 20px;
+  grid-auto-rows: auto;
+  grid-gap: 40px;
+}
+
+.projects {
+  display: grid;
+  grid-template: auto / repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 40px;
 }
 
 .title {
@@ -95,14 +104,15 @@ li {
   height: 50px;
   margin: 10% 40% 5%;
   border: solid #9FC69F;
-  background-color: #9FC69F;
-  color: #464039;
+  background-color: black;
+  color: #9FC69F;
   padding: 7px 7px;
 }
 
 .button:hover {
-  border: solid #5A7F5A;
-  background-color: #D2CBCC;
+  border: solid #9FC69F;
+  background-color: #9FC69F;
+  color: black;
 }
 
 a {
