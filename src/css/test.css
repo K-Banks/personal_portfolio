@@ -153,12 +153,14 @@ li {
   background-color: black;
   color: #94D194;
   padding: 7px 7px;
+  text-shadow: 1px 1px 0 black;
 }
 
 .button:hover {
   border: solid #94D194;
   background-color: #94D194;
   color: black;
+  text-shadow: none;
 }
 
 #socialmedia li {
