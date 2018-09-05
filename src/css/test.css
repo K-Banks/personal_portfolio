@@ -8,14 +8,14 @@ div {
   grid-template: repeat(5, auto) / 50px 1fr 1fr 30px;
   grid-auto-rows: auto;
   grid-gap: 30px;
-  background-color: #D2CBCC;
+  background-color: #F0EDEE;
   color: #464039;
   grid-template-areas:
     ". h h h"
     ". p p p"
     ". s s s"
     ". a a a"
-    "c c m m";
+    ". c m m";
 }
 
 #navbar {
@@ -28,6 +28,9 @@ div {
   grid-area: h;
   align-content: center;
   height: 300px;
+  background-image: url(./../assets/sample4.jpg);
+  background-position: top left;
+  color: #94D194;
 }
 
 .projectContainer {
@@ -37,6 +40,7 @@ div {
   grid-template-rows: repeat(auto-fit, auto);
   grid-auto-rows: auto;
   grid-gap: 40px;
+  margin-right: 20px;
 }
 
 #projectTitle {
@@ -84,7 +88,7 @@ div {
 
 .about {
   height: 600px;
-  color: #C9C0C1;
+  color: #94D194;
   background-image: url(./../assets/herobg.jpg);
   background-position: right;
   grid-area: a;
@@ -95,6 +99,7 @@ div {
 .aboutblurb {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  margin-left: 1em;
 }
 
 .aboutimages {
@@ -105,6 +110,24 @@ div {
 .contact {
   height: 120px;
   grid-area: c;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact h4 {
+  padding-top: 30px;
+}
+
+.contact div {
+  padding-top: 20px;
+}
+
+.contact p {
+  font-size: 16px;
+  font-weight: 450;
+  border: 2px solid #94D194;
+  margin-bottom: 3px;
+  padding: 0px 5px;
 }
 
 .media {
@@ -126,30 +149,40 @@ li {
 .button {
   height: 50px;
   margin: 10% 40% 5%;
-  border: solid #9FC69F;
+  border: solid #94D194;
   background-color: black;
-  color: #9FC69F;
+  color: #94D194;
   padding: 7px 7px;
 }
 
 .button:hover {
-  border: solid #9FC69F;
-  background-color: #9FC69F;
+  border: solid #94D194;
+  background-color: #94D194;
   color: black;
 }
 
-a {
-  color: #000000;
+#socialmedia li {
+  font-size: 16px;
+  font-weight: 450;
+  border: 2px solid #94D194;
+  margin-bottom: 3px;
+  padding: 0px 5px;
 }
 
-a:hover {
+#socialmedia a {
+  color: #464039;
+}
+
+#socialmedia li:hover {
+  background-color: #94D194;
+}
+
+#socialmedia a:hover {
   text-decoration: none;
-  color: #4D463E;
-  text-shadow: 1px 2px 2px #5A7F5A;
 }
 
 #followme {
-  padding-top: 35px;
+  padding-top: 30px;
 }
 
 #followme h4 {
@@ -157,7 +190,6 @@ a:hover {
 }
 
 #socialmedia ul {
-  padding-top: 15px;
   padding-right: 20px;
   float: left;
 }
