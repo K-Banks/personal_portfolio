@@ -174,19 +174,14 @@ div {
   grid-template-rows: repeat(4, auto);
 }
 
-.about h1 {
-  color: #6EB76E;
-}
-
 .aboutblurb {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   margin-left: 1em;
 }
 
 .aboutimages {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .reachout {
