@@ -1,5 +1,0 @@
-import { } from './';
-
-describe('', function() {
-
-});
