@@ -76,17 +76,17 @@ div {
 }
 
 #greeting {
-  display: grid;
+  display: none;
   grid-area: g;
   padding-top: 70px;
   margin-bottom: 30px;
   text-align: left;
 
-  -webkit-animation: fadein 4s;
+  /* -webkit-animation: fadein 4s;
   -moz-animation: fadein 4s;
   -ms-animation: fadein 4s;
   -o-animation: fadein 4s;
-  animation: fadein 4s;
+  animation: fadein 4s; */
 }
 
 #greeting h1 {
@@ -94,16 +94,16 @@ div {
 }
 
 #tagline {
-  display: grid;
+  display: none;
   grid-area: t;
   text-align: left;
   font-family: Avenir;
 
-  -webkit-animation: fadein 4s;
+  /* -webkit-animation: fadein 4s;
   -moz-animation: fadein 4s;
   -ms-animation: fadein 4s;
   -o-animation: fadein 4s;
-  animation: fadein 4s;
+  animation: fadein 4s; */
 }
 
 #tagline h2 {
