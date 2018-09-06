@@ -21,7 +21,7 @@ module.exports = {
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'Title Words',
+      title: 'Kayl Eubanks',
       template: './src/index.html',
       inject: 'body'
     })
