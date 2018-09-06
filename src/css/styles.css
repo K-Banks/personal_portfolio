@@ -13,14 +13,6 @@
   to {opacity: 1;}
 }
 
-.hide {
-  display: none;
-}
-
-.load {
-  opacity: 1;
-}
-
 div {
   text-align: center;
   font-family: Hiragino;
@@ -83,19 +75,12 @@ div {
   padding-top: 70px;
   margin-bottom: 30px;
   text-align: left;
-  opacity: 0;
 
-  /* -webkit-transition: opacity 2s ease-in;
-  -moz-transition: opacity 2s ease-in;
-  -o-transition: opacity 2s ease-in;
-  -ms-transition: opacity 2s ease-in;
-  transition: opacity 2s ease-in; */
-
-  -webkit-animation: fadein 3s;
-  -moz-animation: fadein 3s;
-  -ms-animation: fadein 3s;
-  -o-animation: fadein 3s;
-  animation: fadein 3s;
+  -webkit-animation: fadein 4s;
+  -moz-animation: fadein 4s;
+  -ms-animation: fadein 4s;
+  -o-animation: fadein 4s;
+  animation: fadein 4s;
 }
 
 #greeting h1 {
@@ -108,11 +93,11 @@ div {
   text-align: left;
   font-family: Avenir;
 
-  -webkit-animation: fadein 6s;
-  -moz-animation: fadein 6s;
-  -ms-animation: fadein 6s;
-  -o-animation: fadein 6s;
-  animation: fadein 6s;
+  -webkit-animation: fadein 4s;
+  -moz-animation: fadein 4s;
+  -ms-animation: fadein 4s;
+  -o-animation: fadein 4s;
+  animation: fadein 4s;
 }
 
 #tagline h2 {
