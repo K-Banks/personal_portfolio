@@ -1,5 +1,6 @@
 import $ from 'jquery';
-import './styles.css';
+import './css/styles.css';
+
 
 $(document).ready(function(){
 

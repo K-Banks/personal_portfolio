@@ -8,6 +8,19 @@
   src: url(./../assets/hiragino-mincho-pron-w3.otf) format("opentype");
 }
 
+@keyframes fadein {
+  from { opacity: 0;}
+  to {opacity: 1;}
+}
+
+.hide {
+  display: none;
+}
+
+.load {
+  opacity: 1;
+}
+
 div {
   text-align: center;
   font-family: Hiragino;
@@ -70,17 +83,19 @@ div {
   padding-top: 70px;
   margin-bottom: 30px;
   text-align: left;
+  opacity: 0;
+
+  /* -webkit-transition: opacity 2s ease-in;
+  -moz-transition: opacity 2s ease-in;
+  -o-transition: opacity 2s ease-in;
+  -ms-transition: opacity 2s ease-in;
+  transition: opacity 2s ease-in; */
 
   -webkit-animation: fadein 3s;
   -moz-animation: fadein 3s;
   -ms-animation: fadein 3s;
   -o-animation: fadein 3s;
   animation: fadein 3s;
-}
-
-@keyframes fadein {
-  from { opacity: 0;}
-  to {opacity: 1;}
 }
 
 #greeting h1 {
