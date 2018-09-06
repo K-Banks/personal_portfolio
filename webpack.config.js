@@ -17,7 +17,7 @@ module.exports = {
   },
   plugins: [
     new Dotenv(),
-    new CopyWebpackPlugin([{ from: 'src/img', to: 'img'}]),
+    new CopyWebpackPlugin([{ from: 'src/img', to: 'img'}, { from: 'src/assets', to: 'assets'}]),
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
@@ -29,7 +29,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(jpg|png|svg)$/,
+        test: /\.(jpg|png|svg|otf)$/,
         use: [
             {
               loader: 'file-loader',
