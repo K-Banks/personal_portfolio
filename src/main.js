@@ -8,4 +8,28 @@ $(document).ready(function(){
       $('#tagline').fadeIn(1500)
     }, 500);
   });
+
+  $("#projectsLink").click(function(){
+    $('html,body').animate({
+      scrollTop: $(".projectContainer").offset().top},
+    1500);
+  });
+
+  $("#aboutLink").click(function(){
+    $('html,body').animate({
+      scrollTop: $(".about").offset().top},
+    1500);
+  });
+
+  $("#contactLink").click(function(){
+    $('html,body').animate({
+      scrollTop: $(".reachout").offset().top},
+    1500);
+  });
+
+  $(".projectButton").click(function(){
+    $('html,body').animate({
+      scrollTop: $("#projectInfo").offset().top},
+    1500);
+  });
 });
