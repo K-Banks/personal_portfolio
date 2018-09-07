@@ -18,13 +18,13 @@ $(document).ready(function(){
   $("#aboutLink").click(function(){
     $('html,body').animate({
       scrollTop: $(".about").offset().top},
-    1500);
+    2000);
   });
 
   $("#contactLink").click(function(){
     $('html,body').animate({
       scrollTop: $(".reachout").offset().top},
-    1500);
+    2500);
   });
 
   $(".projectButton").click(function(){

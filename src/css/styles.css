@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
   font-family: Avenir;
   src: url(./../assets/AvenirNextLTPro-Regular.otf) format("opentype");
 }
@@ -6,7 +6,7 @@
 @font-face {
   font-family: Hiragino;
   src: url(./../assets/hiragino-mincho-pron-w3.otf) format("opentype");
-} */
+}
 
 @keyframes fadein {
   from { opacity: 0;}
@@ -81,12 +81,6 @@ div {
   padding-top: 70px;
   margin-bottom: 30px;
   text-align: left;
-
-  /* -webkit-animation: fadein 4s;
-  -moz-animation: fadein 4s;
-  -ms-animation: fadein 4s;
-  -o-animation: fadein 4s;
-  animation: fadein 4s; */
 }
 
 #greeting h1 {
@@ -98,12 +92,6 @@ div {
   grid-area: t;
   text-align: left;
   font-family: Avenir;
-
-  /* -webkit-animation: fadein 4s;
-  -moz-animation: fadein 4s;
-  -ms-animation: fadein 4s;
-  -o-animation: fadein 4s;
-  animation: fadein 4s; */
 }
 
 #tagline h2 {
@@ -194,37 +182,8 @@ div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   color: #050505;
-  height: 133px;
-}
-
-.contact {
-  height: 120px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.contact h4 {
-  padding-top: 45px;
-  padding-left: 70px;
-}
-
-.contact div {
-  padding-top: 20px;
-  margin-right: 50px;
-}
-
-.contact p {
-  font-size: 16px;
-  font-weight: 450;
-  margin-bottom: 3px;
-  margin-top: 10px;
-  padding: 0px 5px;
-}
-
-.media {
-  height: 120px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  height: 800px;
+  padding: 0px 70px;
 }
 
 img {
@@ -234,6 +193,7 @@ img {
 
 li {
   list-style: none;
+  width: 200px;
 }
 
 .button {
@@ -253,37 +213,41 @@ li {
   text-shadow: none;
 }
 
-#socialmedia li {
-  font-size: 16px;
-  font-weight: 450;
-  margin-bottom: 3px;
-  margin-top: 10px;
-  padding: 0px 5px;
-  border: solid #050505 2px;
+.logoParent {
+  width: 50px;
 }
 
-#socialmedia a {
-  color: #050505;
+.logoParent img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
 }
 
-#socialmedia li:hover {
-  background-color: #6EB76E;
+#reachoutblurb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-#socialmedia a:hover {
-  color: black;
-  text-decoration: none;
+#contactInfo {
+  padding-left: 70px;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-#followme {
-  padding-top: 40px;
+#contactInfo h4 {
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 10px;
 }
 
-#followme h4 {
-  float: right;
+.flexContact {
+  display: flex;
 }
 
-#socialmedia ul {
-  padding-right: 20px;
-  float: left;
+.flexContact a {
+  display: inline-flex;
 }
