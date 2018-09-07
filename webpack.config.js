@@ -20,7 +20,7 @@ module.exports = {
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       title: 'Kayl Eubanks',
-      tempalte: './src/index.html',
+      template: './src/index.html',
       inject: 'body'
     })
   ],
