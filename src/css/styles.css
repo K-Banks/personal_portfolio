@@ -251,3 +251,19 @@ li {
 .flexContact a {
   display: inline-flex;
 }
+
+#twitter {
+  width: 120%;
+  margin-left: -5px;
+  margin-top: -5px;
+}
+
+#email {
+  width: 140%;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+a {
+  color: #050505;
+}
