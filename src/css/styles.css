@@ -267,3 +267,17 @@ li {
 a {
   color: #050505;
 }
+
+#topScroller {
+  display: block;
+  position: fixed;
+  color: white;
+  margin: 96% 0% 0% 96%;
+  padding: 3px;
+}
+
+#topScroller:hover {
+  text-decoration: underline;
+  border: 2px solid white;
+  cursor: pointer;
+}
