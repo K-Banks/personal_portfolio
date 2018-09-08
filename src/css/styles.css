@@ -272,8 +272,9 @@ a {
   display: block;
   position: fixed;
   color: white;
-  margin: 96% 0% 0% 96%;
+  margin: 95% 0% 0% 95%;
   padding: 3px;
+  padding-bottom: 1px;
 }
 
 #topScroller:hover {
