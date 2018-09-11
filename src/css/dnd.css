@@ -1,0 +1,23 @@
+#dndSpellInfo {
+  text-align: left;
+  display: none;
+  padding: 0px 50px;
+  border-bottom: 2px groove black;
+  margin-top: 15px;
+}
+
+#dndSpellInfo p {
+  padding-left: 30px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+#testbutton {
+  margin: 0px;
+  width: auto;
+}
+
+#dndGrid {
+  display: grid;
+  grid-template-columns: 30px 1fr 1fr 30px;
+}

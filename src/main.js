@@ -63,7 +63,16 @@ $(document).ready(function(){
   }
 
   function changeDndSpellInfo(dndSpell) {
+    let shortDescription = dndSpell.description.substring(0, 200);
+    shortDescription = shortDescription + '...';
     $("#spellName").text(dndSpell.name);
+    $("#spellLevel").text(dndSpell.level);
+    $("#spellCastingTime").text(dndSpell.castTime);
+    $("#spellRange").text(dndSpell.range);
+    $("#spellDuration").text(dndSpell.duration);
+    $("#spellDescription").text(shortDescription);
+    $("#spellSchool").text(dndSpell.school);
+    $("#dndSpellInfo").slideDown(300);
   }
 
   $('#greeting').fadeIn(1500, function () {
