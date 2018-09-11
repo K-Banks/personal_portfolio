@@ -33,10 +33,13 @@ div {
     "c c c c";
 }
 
-.logo {
+#leftBar {
   position: fixed;
   margin-left: 20px;
   margin-top: 20px;
+}
+
+.logo {
   background-image: url(./../img/logosmall.png);
   background-position: center;
   background-size: contain;
@@ -47,8 +50,9 @@ div {
 #navbar {
   grid-area: n;
   display: grid;
-  grid-template-columns: 3fr 2fr 2fr 2fr 60px;
-  margin-top: 20px;
+  width: 70px;
+  grid-template-rows: 5px repeat(3, 40px);
+  margin-top: 10px;
 }
 
 #navbar div:hover {
@@ -212,7 +216,8 @@ li {
 
 .button {
   height: 45px;
-  margin: 10% 40% 5%;
+  margin: 10% 30% 5%;
+  width: auto;
   border: solid #6EB76E;
   background-color: black;
   color: #6EB76E;
