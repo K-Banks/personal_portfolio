@@ -140,7 +140,7 @@ div {
 
 #projectInfo {
   border-top: 2px solid black;
-  height: 400px;
+  height: auto;
   margin-bottom: 30px;
   display: none;
 }
@@ -161,6 +161,7 @@ div {
 
 .stretch {
   grid-column: 1 / -1;
+  height: auto;
 }
 
 .skills {
