@@ -97,7 +97,7 @@ $(document).ready(function(){
     2500);
   });
 
-  $("#topScroller").click(function(){
+  $(".logo").click(function(){
     $('html,body').animate({
       scrollTop: $(".wrapper").offset().top},
     2500);

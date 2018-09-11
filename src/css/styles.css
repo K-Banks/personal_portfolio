@@ -47,12 +47,20 @@ div {
   width: 70px;
 }
 
+.logo:hover {
+  cursor: pointer;
+}
+
 #navbar {
   grid-area: n;
   display: grid;
   width: 70px;
-  grid-template-rows: 5px repeat(3, 40px);
+  grid-template-rows: repeat(3, 40px);
   margin-top: 10px;
+}
+
+#navbar h6 {
+  font-weight: 500;
 }
 
 #navbar div:hover {
@@ -64,7 +72,7 @@ div {
 .header {
   display: grid;
   grid-area: h;
-  height: 550px;
+  height: 600px;
   background-image: url(./../img/herobg.jpg);
   background-position: bottom right;
   background-size: cover;
@@ -176,7 +184,7 @@ div {
 }
 
 .about {
-  padding-top: 50px;
+  padding: 50px 10px 0px 25px;
   height: 600px;
   background-position: right;
   grid-area: a;
@@ -298,21 +306,6 @@ li {
 
 a {
   color: #050505;
-}
-
-#topScroller {
-  display: block;
-  position: fixed;
-  color: white;
-  margin: 95% 0% 0% 95%;
-  padding: 3px;
-  padding-bottom: 1px;
-}
-
-#topScroller:hover {
-  text-decoration: underline;
-  border: 2px solid white;
-  cursor: pointer;
 }
 
 iframe {
