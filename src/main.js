@@ -7,25 +7,25 @@ $(document).ready(function(){
     {
       id: "onTheSpotify",
       title: "On-The-Spotify",
-      about: ["Paragraph 1", "paragraph 2", "paragraph 3"],
+      component: "./projectSubpages/spotifyComponent.html",
       link: "https://github.com/K-Banks/On-The-Spotify"
     },
     {
       id: "dndSpellApi",
       title: "DnD Spell API",
-      about: ["Dnd paragraph 1", "Dnd paragraph 2"],
+      component: "./projectSubpages/dndComponent.html",
       link: "https://github.com/K-Banks/dnd-organizer-api"
     },
     {
       id: "personalPortfolio",
       title: "My Portfolio Site",
-      about: ["portfolio paragraph 1", "portfolio paragraph 2"],
+      component: "./projectSubpages/portfolioComponent.html",
       link: "https://github.com/K-Banks/personal_portfolio"
     },
     {
       id: "tbd",
       title: "Undecided Angular Project",
-      about: ["Angular paragraph 1", "Angular paragraph 2", "Angular paragraph 3"],
+      component: "./projectSubpages/tbdComponent.html",
       link: "https://github.com/K-Banks/gamasutra-clone"
     }
   ];
@@ -40,8 +40,7 @@ $(document).ready(function(){
       i += 1;
     }
     $("#projectTitle h2").text(currentProject.title);
-    $(".temp").remove();
-    $.get("./projectSubpages/testComponent.html", function(data) {
+    $.get(currentProject.component, function(data) {
       $("#projectDescription").html(data);
       $("#dndForm").submit(function(event) {
         event.preventDefault();
@@ -58,8 +57,7 @@ $(document).ready(function(){
         return response.json();
       }).then(function(myJson) {
         changeDndSpellInfo(myJson)
-      }
-      );
+      });
   }
 
   function changeDndSpellInfo(dndSpell) {
