@@ -1,7 +1,6 @@
 import $ from 'jquery';
 import './css/styles.css';
 
-
 $(document).ready(function(){
 
   const projectInformation = [
@@ -42,9 +41,29 @@ $(document).ready(function(){
     }
     $("#projectTitle h2").text(currentProject.title);
     $(".temp").remove();
-    currentProject.about.forEach(function(text) {
-      $("#projectDescription").append("<div class='temp'><p>"+text+"</p></div>")
+    $.get("./projectSubpages/testComponent.html", function(data) {
+      $("#projectDescription").html(data);
+      $("#dndForm").submit(function(event) {
+        event.preventDefault();
+        getRandomDnDSpell();
+      });
     });
+  }
+
+  function getRandomDnDSpell() {
+    console.log('requesting spell');
+    let rng = Math.floor((Math.random() * 10) + 4);
+    fetch("https://dnd-spell-organizer.herokuapp.com/spells/" + rng)
+      .then(function(response) {
+        return response.json();
+      }).then(function(myJson) {
+        changeDndSpellInfo(myJson)
+      }
+      );
+  }
+
+  function changeDndSpellInfo(dndSpell) {
+    $("#spellName").text(dndSpell.name);
   }
 
   $('#greeting').fadeIn(1500, function () {

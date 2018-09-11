@@ -309,3 +309,9 @@ a {
   border: 2px solid white;
   cursor: pointer;
 }
+
+iframe {
+  height: auto;
+  width: 100%;
+  border: none;
+}
