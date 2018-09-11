@@ -139,10 +139,10 @@ div {
 }
 
 #projectInfo {
+  border-top: 2px solid black;
   height: 400px;
-  background-color: #050505;
   margin-bottom: 30px;
-  color: #C5C2C3;
+  display: none;
 }
 
 .stretch {
@@ -206,6 +206,13 @@ li {
 }
 
 .button:hover {
+  border: solid #6EB76E;
+  background-color: #6EB76E;
+  color: black;
+  text-shadow: none;
+}
+
+.active {
   border: solid #6EB76E;
   background-color: #6EB76E;
   color: black;

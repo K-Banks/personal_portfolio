@@ -29,7 +29,7 @@ $(document).ready(function(){
 
   $(".projectButton").click(function(){
     $('html,body').animate({
-      scrollTop: $("#projectInfo").offset().top},
+      scrollTop: $("#slideMark").offset().top},
     1500);
   });
 
@@ -37,5 +37,10 @@ $(document).ready(function(){
     $('html,body').animate({
       scrollTop: $(".wrapper").offset().top},
     2500);
+  });
+
+  $(".projectButton").click(function(event) {
+    $(event.target).addClass("active");
+    $("#projectInfo").slideDown(1000);
   });
 });
