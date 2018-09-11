@@ -145,6 +145,20 @@ div {
   display: none;
 }
 
+#projectTitle {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+#projectDescription {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+#projectDescription div {
+  padding: 20px 20px;
+}
+
 .stretch {
   grid-column: 1 / -1;
 }
