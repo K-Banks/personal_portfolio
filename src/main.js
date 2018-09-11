@@ -40,8 +40,11 @@ $(document).ready(function(){
       }
       i += 1;
     }
-    console.log(currentProject.title);
     $("#projectTitle h2").text(currentProject.title);
+    $(".temp").remove();
+    currentProject.about.forEach(function(text) {
+      $("#projectDescription").append("<div class='temp'><p>"+text+"</p></div>")
+    });
   }
 
   $('#greeting').fadeIn(1500, function () {
