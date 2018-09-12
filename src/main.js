@@ -124,28 +124,4 @@ $(document).ready(function(){
       scrollTop: ($(".projectContainer").offset().top - 80)},
     1500);
   });
-
-  // $(window).on('scroll', function() {
-  //   var projectsStartPosition = $(".projectContainer").offset().top;
-  //   var projectsEndPosition = $(".about").offset().top;
-  //   var projectsLinkPosition = $("#projectsLink").offset().top;
-  //   var contactPosition = $(".reachout").offset().top;
-  //   var aboutLinkPosition = $("#aboutLink").offset().top;
-  //   var reachoutLinkPosition = $("#contactLink").offset().top;
-  //   var logoPosition = $(".logo").offset().top + 40;
-  //   let linkArray = ["#projectsLink", "#aboutLink", "#contactLink"]
-  //   let positionArray = [projectsLinkPosition, aboutLinkPosition, reachoutLinkPosition];
-  //   for (var i = 0; i < positionArray.length; i++) {
-  //     if (positionArray[i] > projectsStartPosition && positionArray[i] < projectsEndPosition || positionArray[i] > contactPosition) {
-  //       $(linkArray[i]).addClass("black");
-  //     } else {
-  //       $(linkArray[i]).removeClass("black");
-  //     }
-  //   }
-  //   if (logoPosition > projectsStartPosition && logoPosition < projectsEndPosition || logoPosition > contactPosition) {
-  //     $(".logo").addClass("logoblack");
-  //   } else {
-  //     $(".logo").removeClass("logoblack");
-  //   }
-  // });
 });
