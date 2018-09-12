@@ -57,7 +57,7 @@ div {
   display: grid;
   width: 100%;
   grid-template-columns: 100px 12fr 3fr 3fr 3fr 10px;
-  padding-top: 30px;
+  padding-top: 25px;
   height: 70px;
   position: fixed;
   z-index: 1;

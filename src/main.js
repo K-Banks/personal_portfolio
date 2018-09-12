@@ -130,18 +130,17 @@ $(document).ready(function(){
   });
 
   $(window).on('scroll', function() {
-    var projectsStartPosition = ($(".projectContainer").offset().top - 65);
-    var projectsEndPosition = ($(".about").offset().top - 60);
+    var projectsEndPosition = ($(".about").offset().top - 65);
     var navbarPosition = $(".logo").offset().top;
     var contactPosition = ($(".reachout").offset().top - 60);
-    if (navbarPosition > projectsStartPosition && navbarPosition < projectsEndPosition || navbarPosition > contactPosition) {
-      $("#navbar").removeClass("black");
-      $("#navbar").addClass("gray");
-      $(".logo").addClass("logoblack");
-    } else {
+    if (navbarPosition < projectsEndPosition || navbarPosition > contactPosition) {
       $("#navbar").removeClass("gray");
       $("#navbar").addClass("black");
       $(".logo").removeClass("logoblack");
+    } else {
+      $("#navbar").removeClass("black");
+      $("#navbar").addClass("gray");
+      $(".logo").addClass("logoblack");
     }
   });
 });
