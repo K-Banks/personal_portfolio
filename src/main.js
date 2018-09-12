@@ -40,7 +40,7 @@ $(document).ready(function(){
       i += 1;
     }
     $("#projectTitle h2").text(currentProject.title);
-    $.get("./projectSubpages/dndComponent.html", function(data) {
+    $.get(currentProject.component, function(data) {
       $("#projectDescription").html(data);
       $("#dndForm").submit(function(event) {
         event.preventDefault();
