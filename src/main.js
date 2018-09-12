@@ -118,6 +118,7 @@ $(document).ready(function(){
 
   $("#hideProject").click(function(event) {
     $(".projectButton").removeClass("active");
+    $(".imgLocator").removeClass("noFilter");
     $("#projectInfo").slideUp(1000);
     $('html,body').animate({
       scrollTop: ($(".projectContainer").offset().top - 80)},
