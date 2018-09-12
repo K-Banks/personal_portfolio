@@ -128,7 +128,7 @@ $(document).ready(function(){
     var projectsLinkPosition = $("#projectsLink").offset().top;
     var aboutLinkPosition = $("#aboutLink").offset().top;
     var reachoutLinkPosition = $("#contactLink").offset().top;
-    var logoPosition = $(".logo").offset().top;
+    var logoPosition = $(".logo").offset().top + 40;
     let linkArray = ["#projectsLink", "#aboutLink", "#contactLink"]
     let positionArray = [projectsLinkPosition, aboutLinkPosition, reachoutLinkPosition];
     for (var i = 0; i < positionArray.length; i++) {
