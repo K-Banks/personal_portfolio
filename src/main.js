@@ -13,7 +13,7 @@ $(document).ready(function(){
     {
       id: "dndSpellApi",
       title: "DnD Spell API",
-      component: "./projectSubpages/dndComponent.html",
+      component: "/projectSubpages/dndComponent.html",
       link: "https://github.com/K-Banks/dnd-organizer-api"
     },
     {
@@ -40,7 +40,7 @@ $(document).ready(function(){
       i += 1;
     }
     $("#projectTitle h2").text(currentProject.title);
-    $.get(currentProject.component, function(data) {
+    $.get("./projectSubpages/dndComponent.html", function(data) {
       $("#projectDescription").html(data);
       $("#dndForm").submit(function(event) {
         event.preventDefault();
