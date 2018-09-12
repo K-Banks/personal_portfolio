@@ -47,6 +47,10 @@ div {
   width: 70px;
 }
 
+.logoblack {
+  background-image: url(./../img/logoblack.png)
+}
+
 .logo:hover {
   cursor: pointer;
 }

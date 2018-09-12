@@ -128,6 +128,7 @@ $(document).ready(function(){
     var projectsLinkPosition = $("#projectsLink").offset().top;
     var aboutLinkPosition = $("#aboutLink").offset().top;
     var reachoutLinkPosition = $("#contactLink").offset().top;
+    var logoPosition = $(".logo").offset().top;
     let linkArray = ["#projectsLink", "#aboutLink", "#contactLink"]
     let positionArray = [projectsLinkPosition, aboutLinkPosition, reachoutLinkPosition];
     for (var i = 0; i < positionArray.length; i++) {
@@ -136,6 +137,11 @@ $(document).ready(function(){
       } else {
         $(linkArray[i]).removeClass("black");
       }
+    }
+    if (logoPosition > projectsStartPosition && logoPosition < projectsEndPosition) {
+      $(".logo").addClass("logoblack");
+    } else {
+      $(".logo").removeClass("logoblack");
     }
   });
 });
