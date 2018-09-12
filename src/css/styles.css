@@ -53,6 +53,7 @@ div {
 
 .logo:hover {
   cursor: pointer;
+  opacity: 0.6;
 }
 
 #navbar {
@@ -212,7 +213,7 @@ div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   color: #050505;
-  height: 700px;
+  height: 750px;
   padding: 0px 70px;
 }
 
@@ -320,4 +321,12 @@ iframe {
 
 .black {
   color: #050505;
+}
+
+img {
+  filter: grayscale(100%);
+}
+
+img:hover {
+  filter: none;
 }
