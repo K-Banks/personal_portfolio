@@ -20,31 +20,34 @@ div {
 
 .wrapper {
   display: grid;
-  grid-template: repeat(6, auto) / 70px 1fr 1fr 70px;
+  grid-template: repeat(6, auto) / 100px 1fr 1fr 70px;
   grid-auto-rows: auto;
   background-color: black;
   color: #eeeeee;
   grid-template-areas:
-    ". . n n"
+    "n n n n"
     ". h h h"
     "b p p x"
     ". s s ."
     ". a a ."
     "c c c c";
 }
-
+/*
 #leftBar {
   position: fixed;
-  margin-left: 20px;
+  margin-left: 15px;
   margin-top: 20px;
-}
+} */
 
 .logo {
+  /* position: fixed; */
+  margin-left: 10px;
+  margin-top: -20px;
   background-image: url(./../img/logosmall.png);
   background-position: center;
   background-size: contain;
-  height: 80px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
 }
 
 .logoblack {
@@ -59,9 +62,13 @@ div {
 #navbar {
   grid-area: n;
   display: grid;
-  width: 70px;
-  grid-template-rows: repeat(3, 40px);
-  margin-top: 10px;
+  width: 100%;
+  grid-template-columns: 100px 12fr 3fr 3fr 3fr 10px;
+  padding-top: 30px;
+  height: 80px;
+  position: fixed;
+  background-color: black;
+  z-index: 1;
 }
 
 #navbar h6 {
@@ -77,6 +84,7 @@ div {
 .header {
   display: grid;
   grid-area: h;
+  margin-top: 40px;
   height: 600px;
   background-image: url(./../img/herobg.jpg);
   background-position: bottom right;
@@ -155,6 +163,10 @@ div {
   margin-bottom: 60px;
 }
 
+.project h3 {
+  margin-top: 10px;
+}
+
 #projectInfo {
   border-top: 2px solid black;
   height: auto;
@@ -213,13 +225,15 @@ div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   color: #050505;
-  height: 750px;
+  height: 700px;
   padding: 0px 70px;
+  padding-left: 100px;
 }
 
 img {
   width: 100px;
   height: 100px;
+  filter: grayscale(100%);
 }
 
 li {
@@ -280,7 +294,7 @@ li {
 #contactInfo h4 {
   text-align: left;
   padding-left: 5px;
-  padding-top: 10px;
+  margin-top: 15px;
 }
 
 .flexContact {
@@ -321,10 +335,6 @@ iframe {
 
 .black {
   color: #050505;
-}
-
-img {
-  filter: grayscale(100%);
 }
 
 img:hover {
