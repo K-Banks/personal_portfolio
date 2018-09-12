@@ -13,7 +13,7 @@ $(document).ready(function(){
     {
       id: "dndSpellApi",
       title: "DnD Spell API",
-      component: "/projectSubpages/dndComponent.html",
+      component: "./projectSubpages/dndComponent.html",
       link: "https://github.com/K-Banks/dnd-organizer-api"
     },
     {
@@ -120,5 +120,22 @@ $(document).ready(function(){
     $('html,body').animate({
       scrollTop: $(".projectContainer").offset().top},
     1500);
-  })
+  });
+
+  $(window).on('scroll', function() {
+    var projectsStartPosition = $(".projectContainer").offset().top;
+    var projectsEndPosition = $(".about").offset().top;
+    var projectsLinkPosition = $("#projectsLink").offset().top;
+    var aboutLinkPosition = $("#aboutLink").offset().top;
+    var reachoutLinkPosition = $("#contactLink").offset().top;
+    let linkArray = ["#projectsLink", "#aboutLink", "#contactLink"]
+    let positionArray = [projectsLinkPosition, aboutLinkPosition, reachoutLinkPosition];
+    for (var i = 0; i < positionArray.length; i++) {
+      if (positionArray[i] > projectsStartPosition && positionArray[i] < projectsEndPosition) {
+        $(linkArray[i]).addClass("black");
+      } else {
+        $(linkArray[i]).removeClass("black");
+      }
+    }
+  });
 });

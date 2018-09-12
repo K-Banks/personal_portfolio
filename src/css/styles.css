@@ -185,7 +185,7 @@ div {
 
 .about {
   padding: 50px 10px 0px 25px;
-  height: 600px;
+  height: 800px;
   background-position: right;
   grid-area: a;
   display: grid;
@@ -208,7 +208,7 @@ div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   color: #050505;
-  height: 800px;
+  height: 700px;
   padding: 0px 70px;
 }
 
@@ -312,4 +312,8 @@ iframe {
   height: auto;
   width: 100%;
   border: none;
+}
+
+.black {
+  color: #050505;
 }
