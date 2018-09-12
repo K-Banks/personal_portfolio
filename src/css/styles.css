@@ -302,6 +302,10 @@ li {
   display: inline-flex;
 }
 
+.flexContact a:hover {
+  color: #1d7a0d;
+}
+
 #twitter {
   width: 120%;
   margin-left: -5px;
