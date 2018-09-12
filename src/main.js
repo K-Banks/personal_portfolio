@@ -107,7 +107,9 @@ $(document).ready(function(){
     let projectId = $(event.target).attr('id');
     insertProjectInfo(projectId);
     $(".projectButton").removeClass("active");
+    $(".imgLocator").removeClass("noFilter");
     $(event.target).addClass("active");
+    $(event.target).parent().children(".imgLocator").addClass("noFilter");
     $("#projectInfo").slideDown(1000);
     $('html,body').animate({
       scrollTop: ($("#slideMark").offset().top - 80)},

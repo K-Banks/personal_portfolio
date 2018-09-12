@@ -20,7 +20,7 @@ div {
 
 .wrapper {
   display: grid;
-  grid-template: repeat(6, auto) / 100px 1fr 1fr 70px;
+  grid-template: repeat(6, auto) / 70px 1fr 1fr 70px;
   grid-auto-rows: auto;
   background-color: black;
   color: #eeeeee;
@@ -32,15 +32,8 @@ div {
     ". a a ."
     "c c c c";
 }
-/*
-#leftBar {
-  position: fixed;
-  margin-left: 15px;
-  margin-top: 20px;
-} */
 
 .logo {
-  /* position: fixed; */
   margin-left: 10px;
   margin-top: -20px;
   background-image: url(./../img/logosmall.png);
@@ -133,7 +126,6 @@ div {
   background-color: #C5C2C3;
 }
 
-
 .projectContainer {
   padding-top: 50px;
   background-color: #C5C2C3;
@@ -165,6 +157,11 @@ div {
 
 .project h3 {
   margin-top: 10px;
+}
+
+.project p {
+  text-align: justify;
+  padding: 5px 15px;
 }
 
 #projectInfo {
@@ -338,5 +335,9 @@ iframe {
 }
 
 img:hover {
+  filter: none;
+}
+
+.noFilter {
   filter: none;
 }
