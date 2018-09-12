@@ -58,9 +58,8 @@ div {
   width: 100%;
   grid-template-columns: 100px 12fr 3fr 3fr 3fr 10px;
   padding-top: 30px;
-  height: 80px;
+  height: 70px;
   position: fixed;
-  background-color: black;
   z-index: 1;
 }
 
@@ -335,7 +334,12 @@ iframe {
 }
 
 .black {
+  background-color: #050505;
+}
+
+.gray {
   color: #050505;
+  background-color: #C5C2C3;
 }
 
 img:hover {

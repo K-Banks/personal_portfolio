@@ -85,25 +85,25 @@ $(document).ready(function(){
 
   $("#projectsLink").click(function(){
     $('html,body').animate({
-      scrollTop: ($(".projectContainer").offset().top - 80)},
+      scrollTop: ($(".projectContainer").offset().top - 70)},
     1500);
   });
 
   $("#aboutLink").click(function(){
     $('html,body').animate({
-      scrollTop: ($(".about").offset().top - 75)},
+      scrollTop: ($(".about").offset().top - 65)},
     2000);
   });
 
   $("#contactLink").click(function(){
     $('html,body').animate({
-      scrollTop: ($(".reachout").offset().top - 80)},
+      scrollTop: ($(".reachout").offset().top - 60)},
     2500);
   });
 
   $(".logo").click(function(){
     $('html,body').animate({
-      scrollTop: ($(".wrapper").offset().top - 80)},
+      scrollTop: ($(".wrapper").offset().top - 70)},
     2500);
   });
 
@@ -116,7 +116,7 @@ $(document).ready(function(){
     $(event.target).parent().children(".imgLocator").addClass("noFilter");
     $("#projectInfo").slideDown(1000);
     $('html,body').animate({
-      scrollTop: ($("#slideMark").offset().top - 80)},
+      scrollTop: ($("#slideMark").offset().top - 70)},
     1500);
   });
 
@@ -125,7 +125,23 @@ $(document).ready(function(){
     $(".imgLocator").removeClass("noFilter");
     $("#projectInfo").slideUp(1000);
     $('html,body').animate({
-      scrollTop: ($(".projectContainer").offset().top - 80)},
+      scrollTop: ($(".projectContainer").offset().top - 70)},
     1500);
+  });
+
+  $(window).on('scroll', function() {
+    var projectsStartPosition = ($(".projectContainer").offset().top - 65);
+    var projectsEndPosition = ($(".about").offset().top - 60);
+    var navbarPosition = $(".logo").offset().top;
+    var contactPosition = ($(".reachout").offset().top - 60);
+    if (navbarPosition > projectsStartPosition && navbarPosition < projectsEndPosition || navbarPosition > contactPosition) {
+      $("#navbar").removeClass("black");
+      $("#navbar").addClass("gray");
+      $(".logo").addClass("logoblack");
+    } else {
+      $("#navbar").removeClass("gray");
+      $("#navbar").addClass("black");
+      $(".logo").removeClass("logoblack");
+    }
   });
 });
