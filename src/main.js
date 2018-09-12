@@ -8,25 +8,29 @@ $(document).ready(function(){
       id: "onTheSpotify",
       title: "On-The-Spotify",
       component: "./projectSubpages/spotifyComponent.html",
-      link: "https://github.com/K-Banks/On-The-Spotify"
+      ghlink: "https://github.com/K-Banks/On-The-Spotify",
+      liveLink: ""
     },
     {
       id: "dndSpellApi",
       title: "DnD Spell API",
       component: "./projectSubpages/dndComponent.html",
-      link: "https://github.com/K-Banks/dnd-organizer-api"
+      ghlink: "https://github.com/K-Banks/dnd-organizer-api",
+      liveLink: ""
     },
     {
       id: "personalPortfolio",
       title: "My Portfolio Site",
       component: "./projectSubpages/portfolioComponent.html",
-      link: "https://github.com/K-Banks/personal_portfolio"
+      ghlink: "https://github.com/K-Banks/personal_portfolio",
+      liveLink: ""
     },
     {
       id: "tbd",
-      title: "Undecided Angular Project",
+      title: "Gamasutra Clone using Angular",
       component: "./projectSubpages/tbdComponent.html",
-      link: "https://github.com/K-Banks/gamasutra-clone"
+      ghlink: "https://github.com/K-Banks/gamasutra-clone",
+      liveLink: "https://k-banks.github.io/gamasutra-clone/"
     }
   ];
 
