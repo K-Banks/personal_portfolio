@@ -1,0 +1,39 @@
+<div>
+  <form id="dndForm">
+    <div id="dndSpell">
+      <button class="button" id="testbutton" type="submit">Show me a random spell</button>
+      <img id="loadingIcon" class="spin" src="http://www.jasonkenison.com/uploads/blog/loading.png" alt="">
+    </div>
+    <div id="dndSpellInfo">
+      <h3 id="spellName"></h3>
+      <p>School: <em id="spellSchool"></em></p>
+      <p>Level: <span id="spellLevel"></span></p>
+      <p>Casting Time: <em id="spellCastingTime"></em></p>
+      <p>Range: <em id="spellRange"></em></p>
+      <p>Duration: <em id="spellDuration"></em></p>
+      <h5>Description:</h5>
+      <p id="spellDescription"></p>
+    </div>
+  </form>
+  <div id="dndGrid">
+    <div>
+      <p>Click the button above to retrieve a random spell from my database. During development, I became much more familiar with how to handle API requests from the backend. This project was built using:</p>
+      <ul>
+        <li>Java</li>
+        <ul>
+          <li>IntelliJ</li>
+          <li>Maven</li>
+          <li>Gradle</li>
+          <li>JUnit</li>
+        </ul>
+        <li>PostgreSQL</li>
+        <li>Heroku for hosting</li>
+        <li>Postman</li>
+      </ul>
+    </div>
+    <div>
+      <p>Finding spells in the middle of a game can be incredibly difficult and break the flow of the game. By building my own database, hosting it, creating various access points for my API, I was able to build rudimentary understanding and skill in backend development.</p>
+      <p>The biggest hurdle I came across during development was figuring out how to handle CORS so that requests can be made from outside of the same domain. Prior to implementing CORS, I was unable to make requests from the API outside of Postman. </p>
+    </div>
+  </div>
+</div>
