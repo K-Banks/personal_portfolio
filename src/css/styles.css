@@ -56,7 +56,7 @@ div {
   grid-area: n;
   display: grid;
   width: 100%;
-  grid-template-columns: 100px 12fr 3fr 3fr 3fr 10px;
+  grid-template-columns: 100px 1fr 100px 100px 100px 20px;
   padding-top: 25px;
   height: 70px;
   position: fixed;
