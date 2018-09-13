@@ -54,7 +54,6 @@ $(document).ready(function(){
   }
 
   function getRandomDnDSpell() {
-    console.log('requesting spell');
     let rng = Math.floor((Math.random() * 10) + 4);
     fetch("https://dnd-spell-organizer.herokuapp.com/spells/" + rng)
       .then(function(response) {
