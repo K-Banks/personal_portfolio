@@ -143,6 +143,15 @@ div {
 
 #hideProject {
   margin: 0;
+  width: 100px;
+}
+
+#linkSection {
+  height: 100px;
+}
+
+#githubLink {
+  margin: 0;
 }
 
 .projects {
