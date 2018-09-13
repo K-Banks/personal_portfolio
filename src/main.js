@@ -79,7 +79,7 @@ $(document).ready(function(){
 
   $('#greeting').fadeIn(1500, function () {
     setTimeout(function() {
-      $('#tagline').fadeTo(1500, 1)
+      $('#tagline').fadeTo(1000, 1)
     }, 500);
   });
 
