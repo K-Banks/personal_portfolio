@@ -49,6 +49,7 @@ $(document).ready(function(){
       $("#projectDescription").html(data);
       $("#dndForm").submit(function(event) {
         event.preventDefault();
+        $("#loadingIcon").fadeTo(10, 1);
         getRandomDnDSpell();
       });
     });
@@ -60,6 +61,7 @@ $(document).ready(function(){
       .then(function(response) {
         return response.json();
       }).then(function(myJson) {
+        $("#loadingIcon").fadeTo(10, 0);
         changeDndSpellInfo(myJson)
       });
   }
