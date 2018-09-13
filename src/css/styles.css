@@ -141,6 +141,10 @@ div {
   margin-bottom: 10px;
 }
 
+#hideProject {
+  margin: 0;
+}
+
 .projects {
   display: grid;
   grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
@@ -237,7 +241,7 @@ li {
 }
 
 .button {
-  height: 45px;
+  height: auto;
   margin: 10% 30% 5%;
   width: auto;
   border: solid #6EB76E;
