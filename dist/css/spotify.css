@@ -1,0 +1,31 @@
+#projectSpotify {
+  display: flex;
+}
+
+#spotifyIcon {
+  width: 120px;
+}
+
+#aboutSpotify {
+  display: grid;
+  grid-template: repeat(1, auto) / repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: auto;
+}
+
+#aboutSpotify p {
+  text-align: justify;
+}
+
+#spotifyTech li {
+  text-align: left;
+  list-style: circle;
+}
+
+.slow {
+  animation: rotate-btn 3s linear 3;
+  animation-iteration-count: infinite;
+  -webkit-animation: rotate-btn 3s linear 3;
+  -webkit-animation-iteration-count: infinite;
+  width: 100px;
+  height: auto;
+}
